@@ -1,0 +1,52 @@
+# def solution(babbling):
+#     can = ["aya", "ye", "woo", "ma"]
+#     cnt = 0
+#     for i in babbling:
+#         for j in can:
+#             if j in i:
+#                 i = i.replace(j,'1',1)
+#         if i.isdigit():
+#             cnt+=1
+#
+#     return cnt
+
+
+
+
+
+
+
+# 재귀 함수(def)
+# def recursive(n):
+#     if n == 0:
+#         print("발사")
+#     else:
+#         print(n)
+#         return recursive(n-1)
+# print(recursive(5)) --> 5 4 3 2 1  발사
+
+
+# def solution(n):
+#     if n == 1:
+#         return 1
+#     else:
+#         return n + solution(n-1)
+# print(solution(998))
+
+
+# def solution(n):
+#     if n == 1:
+#         return 1
+#     elif n == 0:
+#         return 1
+#     else:
+#         return n * solution(n-1)
+# print(solution(4))
+
+# def solution(n):
+#     if n == 2:
+#         return 1 % 1234567
+#     elif n == 3:
+#         return 2 % 1234567
+#     else:
+#         return (solution(n-1) + solution(n-2)) % 1234567
